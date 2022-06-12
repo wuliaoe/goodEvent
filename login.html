@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>good事件-登录-注册</title>
+    <!-- //自己编写的css -->
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <!-- //layui -->
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+</head>
+
+<body>
+    <!-- logo -->
+    <div class="layui-main">
+        <!-- <img src="./assets/images/logo.png" alt="" /> -->
+    </div>
+
+    <!-- 登录窗口 -->
+    <div class="login_Reg_Box" id="lrbox">
+        <div class="tite_loginReg"></div>
+
+        <!-- 登录盒子 -->
+        <div class="login_box">
+            <!-- 登录表单 -->
+            <form class="layui-form" id="form_login">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-user"></i>
+                    <label class="layui-form-label"></label>
+                    <input type="text" name="username" required lay-verify="required" placeholder="普利斯输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <label class="layui-form-label"></label>
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="普利斯输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+
+                <!-- 提交按钮 -->
+                <!-- //这个layUI div标签代表一行 -->
+                <div class="layui-form-item">
+                    <!-- lay-submit 质变button 从普通变为表单提交 -->
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal layui-btn-radius" lay-submit
+                        lay-filter="formDemo">立即提交</button>
+                </div>
+
+                <!-- 去到注册链接 -->
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_reg">去到注册</a>
+                </div>
+            </form>
+
+        </div>
+
+
+        <!-- 注册盒子 -->
+        <div class="reg_box">
+            <form class="layui-form" action="" id="reg_form">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-user"></i>
+                    <label class="layui-form-label"></label>
+                    <input type="text" name="username" required lay-verify="required" placeholder="普利斯输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <label class="layui-form-label"></label>
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="普利斯输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+
+                <!-- 再次确认密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <label class="layui-form-label"></label>
+                    <input type="password" name="repassword" required lay-verify="required|pwd|rpwd"
+                        placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                </div>
+
+                <!-- 提交按钮 -->
+                <!-- //这个layUI div标签代表一行 -->
+                <div class="layui-form-item">
+                    <!-- lay-submit 质变button 从普通变为表单提交 -->
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal layui-btn-radius" lay-submit
+                        lay-filter="formDemo">注册</button>
+                </div>
+
+                <!-- <button id="reg_btn">nihaoma</button> -->
+                <!-- 去到注册链接 -->
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_login">去到登录</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- 导入layUI的属性 -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
+    <!-- 由于注册和和登录按钮需要转换，这里我们引入jQuery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    //在jQuery后和自己写的js前 导入ajaxPrefilter代码
+    <script src="./assets/js/baseApi.js"></script>
+    <!-- 自己的js -->
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>
