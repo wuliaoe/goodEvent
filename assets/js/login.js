@@ -55,7 +55,7 @@ $(function () {
             }
             // console.log('@手写', '注册成功');
             // console.log('@res成功内容', res.message);
-            layer.msg('@注册成功', res.message);
+            layer.msg('@注册成功');
             $('#link_login').click()
         }, 'json')
     })
