@@ -17,15 +17,15 @@ layout实现页面布局的搭建、Ajax实现登录注册验证功能、用Layu
 
 注册功能：
 
-![image](https://github.com/wuliaoe/goodEvent/tree/main/assets/readmeImg/reg.gif)
+![image](https://github.com/wuliaoe/goodEvent/blob/main/assets/readmeImg/reg.gif)
 
 像昵称的渲染功能：
 
-![image](https://github.com/wuliaoe/goodEvent/tree/main/assets/readmeImg/picandname.gif)
+![image](https://github.com/wuliaoe/goodEvent/blob/main/assets/readmeImg/picandname.gif)
 
 防止无认证登录：
 
-![image](https://github.com/wuliaoe/goodEvent/tree/main/assets/readmeImg/backlogin.gif)
+![image](https://github.com/wuliaoe/goodEvent/blob/main/assets/readmeImg/backlogin.gif)
 
 ### 项目地址
 
