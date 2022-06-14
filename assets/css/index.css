@@ -1,0 +1,58 @@
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* //给阿里的图标来点左右边距 */
+.iconfont {
+    margin: 0 5px;
+}
+
+/* //给layui的图标来点左右边距 */
+.layui-icon {
+    margin-right: 5px;
+    /* 为了让结构成次分明这里前面空两格距离 */
+    margin-left: 25px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+a {
+    transition: none !important;
+}
+
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 12px;
+    user-select: none;
+}
+
+/* 由于有两个userinfo的class所以我们多一级准确选择需要修改的info */
+.layui-side-scroll .userinfo {
+    border-bottom: 1px solid #282b32;
+}
+
+.user-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #009668;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 3px;
+    font-size: 15px;
+    color: #fff;
+    vertical-align: middle;
+
+}
