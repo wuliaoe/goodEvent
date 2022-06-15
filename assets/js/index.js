@@ -14,7 +14,7 @@ function getUserInfor() {
             }
             // 获取信息成功后则开始渲染头像等信息，由于步骤过多这里封装一个函数
             readUserInfor(res.data)
-            layui.layer.msg(res.message)
+            // layui.layer.msg(res.message)
         },
         // 无论请求成功还是失败 都会调用complete函数
         // complete: function (res) {
