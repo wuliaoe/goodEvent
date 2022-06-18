@@ -1,0 +1,15 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #f3f5f8;
+}
+
+#btn_right {
+    padding-left: 0px;
+    margin-left: 10px;
+}
